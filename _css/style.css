@@ -1,0 +1,118 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    }
+
+
+.interface {
+    width: 96.9%;
+    height: 55%;
+    background-color: #ffffff;
+    margin: 20px 20px 200px 20px;
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, .5);
+    padding: 10px;
+}
+
+p {
+    text-align: justify;
+    text-indent: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    font-family: cursive;
+    font-size: 20pt;
+}
+
+
+.table {
+    border: 6px solid red;
+    border-spacing: 0px;
+}
+
+
+/* Menu de navegação */
+
+#check {
+    display: none;
+}
+
+#icone {
+    cursor: pointer;
+    padding: 15px;
+    position: absolute;
+    z-index: 1;
+    margin-top: -7px
+}
+
+.barra {
+    height: 25%;
+    width: 160px;
+    position: absolute;
+    transition: all .2s linear;
+    left: -160px;
+}
+
+.link {
+    background-color: white;
+    padding: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 15pt;
+    transition: all .2s linear;
+    opacity: 0;
+    margin-top: 200px;
+}
+
+nav{
+    width: 100%;
+    position: absolute;
+    top: 60px;
+}
+
+nav a{
+    text-decoration: none;
+
+}
+
+#check:checked ~ .barra{
+    transform: translateX(160px);
+}
+
+#check:checked ~ .barra nav a .link{
+    opacity: 1;
+    margin-top: 0;
+    transition-delay: 0.2s;
+}
+
+.link:hover{
+    background-color: #3d3535;
+}
+
+#check:checked ~ .barra nav a .link:hover{
+    transition-delay: 0s;
+}
+
+
+/* Footer Rodapé */
+
+footer.rodape h1 {
+    text-align: center;
+}
+
+.redes_sociais h1 {
+    text-align: center;
+    margin: 40px auto -100px auto;
+    
+}
+
+footer.rodape p {
+    text-align: center;
+    text-align: center;
+}
+
+.redes_sociais a {
+    margin-right: auto;
+    margin-left: auto;
+}
